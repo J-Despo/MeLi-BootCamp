@@ -12,10 +12,10 @@ import java.util.List;
 public class CharacterFinderService implements ICharacterFinderService{
 
     @Autowired
-    private ICharacterRepository repositoryService;
+    private ICharacterRepository repository;
 
     @Override
-    public List<CharacterDTO> findName(String name) {
-        return repositoryService.findName(name);
+    public List<CharacterDTO> getCharactersByName(String name) {
+        return repository.findName(name);
     }
 }
