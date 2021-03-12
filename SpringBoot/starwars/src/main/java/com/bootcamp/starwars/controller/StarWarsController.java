@@ -17,7 +17,7 @@ class StarWarsRestController
     private ICharacterFinderService finderService;
 
     @GetMapping(path = "/{name}")
-    public List<CharacterDTO> obtenerPersonaje(@PathVariable String name){
+    public List<CharacterDTO> findCharacter(@PathVariable String name){
         return finderService.findName(name);
     }
 }
