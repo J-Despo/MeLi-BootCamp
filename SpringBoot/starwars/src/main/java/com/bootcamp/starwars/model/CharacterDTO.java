@@ -17,5 +17,4 @@ public class CharacterDTO
     private String gender;
     private String homeworld;
     private String species;
-
 }
