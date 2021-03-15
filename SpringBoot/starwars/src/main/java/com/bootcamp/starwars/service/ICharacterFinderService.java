@@ -5,5 +5,5 @@ import com.bootcamp.starwars.model.CharacterDTO;
 import java.util.List;
 
 public interface ICharacterFinderService {
-    List<CharacterDTO> findName(String name);
+    List<CharacterDTO> getCharactersByName(String name);
 }
